@@ -1,0 +1,6 @@
+framework module Pods_SwiftProjectAboutCICD {
+  umbrella header "Pods-SwiftProjectAboutCICD-umbrella.h"
+
+  export *
+  module * { export * }
+}

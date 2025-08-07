@@ -6,13 +6,22 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F90EF02623885C01E342D928 /* Pods_SwiftProjectAboutCICD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8667B0C7C943C1CDD46C5B /* Pods_SwiftProjectAboutCICD.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		0FEEC824093CBD20EAFE6B19 /* Pods-SwiftProjectAboutCICD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProjectAboutCICD.debug.xcconfig"; path = "Target Support Files/Pods-SwiftProjectAboutCICD/Pods-SwiftProjectAboutCICD.debug.xcconfig"; sourceTree = "<group>"; };
+		4E9774B9CA9A46154FA60014 /* Pods-SwiftProjectAboutCICD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftProjectAboutCICD.release.xcconfig"; path = "Target Support Files/Pods-SwiftProjectAboutCICD/Pods-SwiftProjectAboutCICD.release.xcconfig"; sourceTree = "<group>"; };
+		DC8667B0C7C943C1CDD46C5B /* Pods_SwiftProjectAboutCICD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftProjectAboutCICD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACD9CD22E44A2DB0014174A /* SwiftProjectAboutCICD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftProjectAboutCICD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		FACD9CD42E44A2DB0014174A /* SwiftProjectAboutCICD */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = SwiftProjectAboutCICD;
 			sourceTree = "<group>";
 		};
@@ -23,17 +32,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F90EF02623885C01E342D928 /* Pods_SwiftProjectAboutCICD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CD5503B53D4D25ED56C7741 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FEEC824093CBD20EAFE6B19 /* Pods-SwiftProjectAboutCICD.debug.xcconfig */,
+				4E9774B9CA9A46154FA60014 /* Pods-SwiftProjectAboutCICD.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F73CFE07DCFABC3C0D840731 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC8667B0C7C943C1CDD46C5B /* Pods_SwiftProjectAboutCICD.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FACD9CC92E44A2DB0014174A = {
 			isa = PBXGroup;
 			children = (
 				FACD9CD42E44A2DB0014174A /* SwiftProjectAboutCICD */,
 				FACD9CD32E44A2DB0014174A /* Products */,
+				1CD5503B53D4D25ED56C7741 /* Pods */,
+				F73CFE07DCFABC3C0D840731 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,9 +82,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FACD9CE02E44A2DC0014174A /* Build configuration list for PBXNativeTarget "SwiftProjectAboutCICD" */;
 			buildPhases = (
+				EA69227FB6AD844CBE0011E9 /* [CP] Check Pods Manifest.lock */,
 				FACD9CCE2E44A2DB0014174A /* Sources */,
 				FACD9CCF2E44A2DB0014174A /* Frameworks */,
 				FACD9CD02E44A2DB0014174A /* Resources */,
+				60F99B7D31A87E76B78C12A4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -64,8 +96,6 @@
 				FACD9CD42E44A2DB0014174A /* SwiftProjectAboutCICD */,
 			);
 			name = SwiftProjectAboutCICD;
-			packageProductDependencies = (
-			);
 			productName = SwiftProjectAboutCICD;
 			productReference = FACD9CD22E44A2DB0014174A /* SwiftProjectAboutCICD.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +143,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		60F99B7D31A87E76B78C12A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftProjectAboutCICD/Pods-SwiftProjectAboutCICD-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftProjectAboutCICD/Pods-SwiftProjectAboutCICD-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftProjectAboutCICD/Pods-SwiftProjectAboutCICD-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA69227FB6AD844CBE0011E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftProjectAboutCICD-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FACD9CCE2E44A2DB0014174A /* Sources */ = {
@@ -246,6 +318,7 @@
 		};
 		FACD9CE12E44A2DC0014174A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FEEC824093CBD20EAFE6B19 /* Pods-SwiftProjectAboutCICD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -275,6 +348,7 @@
 		};
 		FACD9CE22E44A2DC0014174A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E9774B9CA9A46154FA60014 /* Pods-SwiftProjectAboutCICD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
